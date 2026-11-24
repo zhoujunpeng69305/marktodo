@@ -9,62 +9,36 @@
       max-width: 900px;
       margin: 60px auto;
       padding: 0 20px;
-      background: #17181c;
-      color: #e4e6ea;
+      background: #f7f7f7;
+      color: #222;
     }
 
     .app {
-      background: #212329;
+      background: white;
       padding: 28px;
       border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     }
 
     h1 {
       margin-top: 0;
-      color: #f1f3f5;
     }
 
     .input-row {
       display: flex;
-      flex-wrap: wrap;
       gap: 10px;
       margin-bottom: 24px;
     }
 
-    input[type="text"],
-    input[type="date"] {
+    input[type="text"] {
       flex: 1;
-      min-width: 160px;
       padding: 10px 12px;
       font-size: 16px;
-      background: #2c2f36;
-      border: 1px solid #3a3d45;
-      border-radius: 8px;
-      color: #e4e6ea;
-      outline: none;
-    }
-
-    input[type="text"]::placeholder {
-      color: #7a7e87;
-    }
-
-    input[type="date"]::-webkit-calendar-picker-indicator {
-      filter: invert(0.7);
-      cursor: pointer;
     }
 
     button {
       padding: 10px 16px;
       cursor: pointer;
-      background: #3a3d45;
-      color: #e4e6ea;
-      border: 1px solid #454952;
-      border-radius: 8px;
-    }
-
-    button:hover {
-      background: #464a54;
     }
 
     button:disabled {
@@ -83,7 +57,7 @@
       align-items: center;
       gap: 10px;
       padding: 12px 0;
-      border-bottom: 1px solid #2e3138;
+      border-bottom: 1px solid #eee;
     }
 
     li span {
@@ -92,25 +66,26 @@
 
     li.completed span {
       text-decoration: line-through;
-      color: #6b7078;
+      color: #999;
     }
 
     li.completed .due {
       text-decoration: none;
     }
 
+    input[type="date"] {
+      padding: 10px 12px;
+      font-size: 16px;
+    }
+
     li .due {
       flex: none;
       font-size: 14px;
-      color: #9aa0a8;
+      color: #888;
     }
 
     li .due.overdue {
-      color: #f87171;
-    }
-
-    #stats {
-      color: #9aa0a8;
+      color: #d92c2c;
     }
   </style>
 </head>
